@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EasyPic-图床管理</title>
+	<link rel="stylesheet" type="text/css" href="plugins/byy/css/default/byy.css">
+	<style>
+		html,body{
+			width:700px;
+			height:500px;
+		}
+		#paste{
+			width:100%;
+			height:100%;
+			min-height:300px;
+			margin:10px;
+		}
+		#paste:focus,#paste:active{
+			border:1px solid #ddd;
+		}
+		.empty{
+			text-align:center;
+			vertical-align:middle;
+		}
+		.pic-block{
+			width:20%;
+			float:left;
+			padding:5px;
+			box-sizing:border-box;
+			border:1px solid #f2f2f2;
+		}
+		.pic-block img{
+			max-width:100%;
+			max-height:100px;
+			cursor : pointer;
+		}
+		.pic-page{position:absolute;bottom:0px;}
+		.pic-wrap{text-align:center;height:100px;line-height:100px;}
+		.pic-info{
+			padding:5px 0px 2px 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="byy-tab byy-tab-brief" style="">
+			<ul class="byy-tab-title">
+				<li class="byy-tab-this">上传图片</li>
+				<!-- <li class="" id="piclist">图床管理</li> -->
+			</ul>
+			<div class="byy-tab-content" style="">
+				<div class="byy-tab-item show">
+					<input type="file" name="file" id="file" style="display:none;">
+					<div id="paste" class="empty" contenteditable="false" >
+						请在此区域粘贴图片
+					</div>
+				</div>
+				<div class="byy-tab-item">
+					<div class="pic-list byy-clear">
+						
+					</div>
+					<div class="pic-page">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 
+	1. 监听粘贴
+	3. 拖动
+	3. 获得图片数据上传到服务器，并返回地址。
+	-->
+	<input type="hidden" id="AK" value="">
+	<input type="hidden" id="SK" value="">
+	<input type="hidden" id="domain" value="">
+	<input type="hidden" id="pipeline" value="">
+	<input type="hidden" id="bucket" value="">
+	<input type="hidden" id="waterimg" value="">
+	<input type="hidden" id="dissolve" value="">
+	<input type="hidden" id="gravity" value="">
+</body>
+</html>
+<script type="text/javascript" src="lib/mindb.js"></script>
+<script type="text/javascript" src="lib/plupload.full.min.js"></script>
+<script type="text/javascript" src="lib/qiniu.js"></script>
+<script type="text/javascript" src="lib/Crypto.js"></script>
+<script type="text/javascript" src="lib/base.js"></script>
+<script type="text/javascript" src="plugins/byy/byy.js"></script>
+<script type="text/javascript" src="lib/main.js"></script>

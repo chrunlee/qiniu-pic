@@ -1,0 +1,17 @@
+{
+	"manifest_version":2,
+	"name":"qiniupic",
+	"version":"1.0",
+	"description":"七牛图床目前只提供粘贴上传",
+	"icons":{
+		"16":"img/icon16.png"
+	},
+	"browser_action":{
+		"icon":{
+			"16":"img/icon16.png"
+		},
+		"default_title":"简单易用的七牛图床",
+		"default_popup":"popup.html"
+	},
+	"options_page":"options.html"
+}

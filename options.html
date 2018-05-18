@@ -1,0 +1,76 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>七牛云插件</title>
+    <link rel="stylesheet" type="text/css" href="plugins/byy/css/default/byy.css">
+    <script type="text/javascript" src="plugins/byy/byy.js"></script>
+    <script type="text/javascript" src="lib/mindb.js"></script>
+    <script type="text/javascript" src="lib/options.js"></script>
+</head>
+<body>
+<div class="byy-form">
+    <div class="byy-form-item">
+        <label for="AK" class="byy-label">AccessKey</label>
+        <div class="byy-block">
+            <input type="text" class="form-control" id="AK" placeholder="AccessKey">    
+        </div>
+    </div>
+    <div class="byy-form-item">
+        <label for="SK" class="byy-label">SecretKey</label>
+        <div class="byy-block">
+            <input type="text" class="form-control" id="SK" placeholder="SecretKey">    
+        </div>
+    </div>
+    <div class="byy-form-item">
+        <label for="domain" class="byy-label">域名</label>
+        <div class="byy-block">
+            <input type="text" class="form-control" id="domain" placeholder="域名">    
+        </div>
+    </div>
+    <div class="byy-form-item">
+        <label for="bucket" class="byy-label">bucket</label>
+        <div class="byy-block">
+            <input type="text" class="form-control" id="bucket" placeholder="bucket">    
+        </div>
+    </div>
+
+    <div class="byy-form-item">
+        <label for="pipeline" class="byy-label">多媒体处理队列</label>
+        <div class="byy-block">
+            <input type="text" class="form-control" id="pipeline" placeholder="多媒体处理队列，不填则使用公共队列">    
+        </div>
+    </div>
+
+    <div class="byy-form-item">
+        <label for="pipeline" class="byy-label">水印图片地址</label>
+        <div class="byy-block">
+            <input type="text" class="form-control" id="waterimg" placeholder="自动添加水印图片地址,不需要则不填">    
+        </div>
+    </div>
+    <div class="byy-form-item">
+        <label for="dissolve" class="byy-label">水印透明度</label>
+        <div class="byy-block">
+            <input type="text" class="form-control" id="dissolve" placeholder="透明度，取值范围1-100，缺省值为100（完全不透明）">    
+        </div>
+    </div>
+    <div class="byy-form-item">
+        <label for="gravity" class="byy-label">水印位置</label>
+        <div class="byy-block">
+            <select class="byy-form-select" id="gravity">
+                <option value="NorthWest" selected="">右下</option>
+                <option value="SouthWest">左下</option>
+                <option value="NorthWest">左上</option>
+                <option value="NorthEast">右上</option>
+                <option value="North">正上</option>
+                <option value="South">正下</option>
+                <option value="West">正左</option>
+                <option value="East">正右</option>
+                <option value="Center">正中</option>
+            </select>    
+        </div>
+    </div>
+    <div class="byy-block text-center">
+        <span class="byy-btn" style="width:80%" id="save">保存</button>    
+    </div>
+</div>
+
+</body></html>
